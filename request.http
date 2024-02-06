@@ -1,0 +1,58 @@
+GET http://localhost:3500/user-api/get-user/rakesh
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InByYXZlZW4iLCJpYXQiOjE2OTUyMTk2MTgsImV4cCI6MTY5NTIxOTYzOH0.9qlCeRpi87xCj5ri04mZ0Gz8s_zSBKr6rCe_hFiN6TU
+
+
+###
+GET http://localhost:3500/user-api/test
+ Authorization: Bearer 
+
+
+
+###
+
+POST http://localhost:3500/user-api/create-user
+Content-Type: application/json
+
+{
+    "username":"rakesh",
+    "password":"rakesh",
+    "email":"rakesh@gmail.com"
+
+   
+}
+
+###
+POST http://localhost:3500/user-api/user-login
+Content-Type: application/json
+
+{
+    "username":"rakesh",
+    "password":"rakesh"
+}
+
+###
+
+PUT http://localhost:3500/user-api/update-user
+Content-Type: application/json
+
+{
+   "id":10,
+    "name":"rakesh",
+    "age":20
+}
+
+###
+
+DELETE http://localhost:3500/user-api/delete-user/10
+
+
+###
+GET http://localhost:3500/products-api/get-products
+
+
+###
+POST http://localhost:3500/products-api/create-product
+
+###
+DELETE http://localhost:3500/products-api/delete-product
+ 
